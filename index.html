@@ -7,10 +7,10 @@
     <meta name="description" content="Code4demo.github.com : " />
     <title>Code4demo.github.com</title>
     <script> 
-   var host = location.host;
-   if(!(/^www\./.test(host))){
-   window.location.href = "www."+location.href;
-   }
+  var host = window.location.host;
+  if(!(/^www/.test(host))){
+  window.location.href = window.location.href.replace(/http:\/\//,"http:\/\/www.");
+  }
     </script>
   </head>
 
